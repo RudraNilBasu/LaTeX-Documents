@@ -128,18 +128,26 @@
 \section{Motivation}
 \label{S:1}
 
-GCompris is about teaching the basics in the most easiest way to children between the age of 2 to 10. The gtk+ version of GCompris was very well recieved, and from there it was decided to Qt version, to make GCompris available for all kinds of devices, like tablets.
+GCompris is about teaching the basics in the most easiest way to children between the age of 2 to 10. The gtk+ version of GCompris was very well recieved, and from there it was decided to Qt version, to make GCompris available for all kinds of devices, like tablets. The latest version of GCompris is 0.70 and as of now it has 137 categories on various topics like science, maths, games and much more, fully supporting 15 languages.
 
-As of \today , a brief statistics of GCompris are:
-\begin{itemize}
-\item Latest Version: 0.70
-\item A total of 137 categories on various topics like science, maths, games and much more.
-\item 15 languages fully supported
-\item More than 100000 downloads on the Google Play Store
-\item The new version contains 8 new activities
-\end{itemize}
+
+
+
+%As of \today , a brief statistics of GCompris are:
+%\begin{itemize}
+%\item Latest Version: 0.70
+%\item A total of 137 categories on various topics like science, maths, games and much more.
+%\item 15 languages fully supported
+%\item More than 100000 downloads on the Google Play Store
+%\item The new version contains 8 new activities
+%\end{itemize}
 
 My goal for the project is to port two experimental activities from the Gtk+ version of GCompris to the Qt version.
+
+\section{Project Goals}
+\label{S:1}
+
+The best way to teach any concept is by demonstration. But it is not always possible to demonstrate everything that
 
 \section{Implementation Details}
 \label{S:1}
@@ -150,7 +158,7 @@ The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining 
 
 Since this activity was already present in the Gtk+ version, I will be using the svg and the audio files from the resources used in the Gtk+ submarines activity. This will allow me to dive into the coding part directly. Firstly I will be implementing the submarine and the mechanics of it's elements, namely the engine, rudders and the air tanks. Once that is in place, I will then shift on to create various levels, implementing the submarine to pickup jewels, as it was in the Gtk+ version.
 
-The Gtk+ version had only 4 levels, and I would like to increase the number of levels in the Qt port, increasing the difficulty curve, bringing up elements like caves, rocks, while still keeping it doable for children.
+The Gtk+ version had only 4 levels, and I would like to increase the number of levels in the Qt port, increasing the difficulty curve, bringing up elements like caves, rocks, while still keeping it doable for children within the prescribed age limit.
 
 \subsection{Sea Race (Single Player)}
 
