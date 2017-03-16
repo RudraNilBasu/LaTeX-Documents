@@ -52,6 +52,7 @@
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
 %% for the whole article with \linenumbers after \end{frontmatter}.
 \usepackage{lineno}
+\usepackage{hyperref}
 
 %% natbib.sty is loaded by default. However, natbib options can be
 %% provided with \biboptions{...} command. Following options are
@@ -149,10 +150,19 @@ The best way to teach any concept is by demonstration. But it is not always poss
 \section{Project Goals}
 \label{S:1}
 
-By the end of the Google Summer of Code's time period, I aim to:
+By the end of the Google Summer of Code's time period, I will be completing the following activities :
 
 \begin{itemize}
-\item Add two new activities in GCompris (Qt version), in the experience section (\textit{"Pilot a Submarine"} and \textit{"Sea race (Single Player)"}).
+
+\item \textbf{Pilot a Submarine}: It is a port to the Qt version of a strategic activity originally present in the Gtk+ version aimed to teach how a submarine works. It was started in this branch: 
+
+\href{https://cgit.kde.org/gcompris.git/log/?h=gsoc-submarine}{https://cgit.kde.org/gcompris.git/log/?h=gsoc-submarine}
+
+\item \textbf{Sea Race (2 players)}: It is an experimental activity from the Gtk+ version, which will be ported to the Qt version of GCompris. This activity is aimed at learning how to enter commands into a computer, providing an introduction to the concepts of programming to children. It was originally present in the Gtk+ version:
+
+\href{https://github.com/gcompris/GCompris-gtk/tree/master/src/searace-activity}{https://github.com/gcompris/GCompris-gtk/tree/master/src/searace-activity}
+
+\item \textbf{The Solar System}: This activity aims at providing a basic understanding about our Solar System, it's planets and facts and properties of each of the planets.
 \end{itemize}
 
 \section{Implementation Details}
@@ -162,10 +172,29 @@ By the end of the Google Summer of Code's time period, I aim to:
 
 The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining the usage of elements such as engine, rudders and air tanks, in order to navigate a submarine to a required depth.
 
-Since this activity was already present in the Gtk+ version, I will be using the svg and the audio files from the resources used in the Gtk+ submarines activity. This will allow me to dive into the coding part directly. Firstly I will be implementing the submarine and the mechanics of it's elements, namely the engine, rudders and the air tanks. Once that is in place, I will then shift on to create various levels, implementing the submarine to pickup jewels, as it was in the Gtk+ version.
+\begin{itemize}
 
-The Gtk+ version had only 4 levels, and I would like to increase the number of levels in the Qt port, increasing the difficulty curve, bringing up elements like caves, rocks, while still keeping it doable for children within the prescribed age limit.
 
+\item Since this activity was already present in the Gtk+ version, I will be using the svg and the audio files from the resources used in the Gtk+ submarines activity. This will allow me to dive into the coding part directly. 
+
+\item There will be a tutorial at the start of the activity, which will give a brief description about the different elements (engine, rudders and air tanks) and it's functions.
+
+\item Firstly I will be implementing the submarine and the mechanics of it's elements, namely the engine, rudders and the air tanks. Once that is in place, I will then shift on to create various levels and it's variations.
+
+%The Gtk+ version had only 4 levels, and I will increase the number of levels in the Qt port, increasing the difficulty curve, bringing up elements like caves, rocks, while still keeping it doable for children within the prescribed age limit.
+
+\item The activity will contain pickups in the form of jewels, as it was present in the Gtk+ version
+
+\item Besides the regular pickups in the Gtk+ version, there will be additional threats in the form of rocks and caves, in order to maintain an increasing difficulty curve, while still keeping it doable for children within the prescribed age limit.
+
+\item In order to enhance the experience, the overall activity and the movement of the submarine and the animations will be smoother compared to the Gtk+ activity.
+
+\begin{figure}[h]
+\centering\includegraphics[width=1.0\linewidth]{submarine}
+\caption{Submarine Activity}
+\end{figure}
+
+\end{itemize}
 \subsection{Sea Race (Single Player)}
 
 
