@@ -158,9 +158,11 @@ By the end of the Google Summer of Code's time period, I will be completing the 
 
 \href{https://cgit.kde.org/gcompris.git/log/?h=gsoc-submarine}{https://cgit.kde.org/gcompris.git/log/?h=gsoc-submarine}
 
-\item \textbf{Sea Race (2 players)}: It is an experimental activity from the Gtk+ version, which will be ported to the Qt version of GCompris. This activity is aimed at learning how to enter commands into a computer, providing an introduction to the concepts of programming to children. It was originally present in the Gtk+ version:
+\item \textbf{Garbage Recycle}: This activity is aimed to teach garbage classification. This was started in \href{https://cgit.kde.org/gcompris.git/log/?h=SoK_Activity_recyclebin_shivansh} {recyclebin} branch
 
-\href{https://github.com/gcompris/GCompris-gtk/tree/master/src/searace-activity}{https://github.com/gcompris/GCompris-gtk/tree/master/src/searace-activity}
+Discussions:
+
+\href{https://phabricator.kde.org/T339}{https://phabricator.kde.org/T339}
 
 \item \textbf{The Solar System}: This activity aims at providing a basic understanding about our Solar System, it's planets and facts and properties of each of the planets.
 \end{itemize}
@@ -195,15 +197,47 @@ The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining 
 \end{figure}
 
 \end{itemize}
-\subsection{Sea Race (Single Player)}
+\subsection{Garbage Recycle}
 
+This activity will be done from scratch as the implementation in the given branch doesn't match with the description. I will be using images from \href{https://openclipart.org/}{openclipart.org} and it will have the following features:
 
-\subsection{Third undecided one}
-/*2d matrix, Tux, door and few pickups. command tux to take all pickups and move out of the door. Commands - rotate (+-90, +180), move forward (x blocks)*/
+\begin{itemize}
 
-/*Physics*/
+\item The activity will begin with a tutorial explaining the basics of different types of recycling procedure for different materials, along with the goal of the activity.
 
-/*Complete incomplete activities*/
+\item Garbages of different types will be available in the table at the start of each level.
+
+\item The user will have to put the waste materials in it's correct recycling bin. On placing the waste in it's correct bin, it will be recycled properly. The goal of the activity is to correctly recycle each of the wastes as provided in each levels.
+
+\item Items will be placed on it's respective bin via drag and drop
+
+\item With progress of levels, there will be an increase in the categories of waste materials, in order to maintain a proper difficulty curve.
+
+\end{itemize}
+
+\subsection{Object Arrangement}
+
+This activity will be created from scratch, in order to expand the current ordering activity to a more generic version of it. It will have the following features:
+
+\begin{itemize}
+
+\item Different types of objects will be provided at the start of each levels and the user will be asked to arrange them in a specific order (ascending or descending) based on a given parameter (height or weight)
+
+\item A toolbox will be provided to the user with the help of which the user can measure the required property of an item
+
+\item The measured properties will be marked on the object. If a property of an object is not yet measured, it will be marked as unknown.
+
+\item With the proper measurements, the user will then arrange the items in the correct order of the parameter
+
+\end{itemize}
+
+%/*2d matrix, Tux, door and few pickups. command tux to take all pickups and move out of the door. Commands - rotate (+-90, +180), move forward (x blocks)*/
+
+%/*Physics*/
+
+%/*Complete incomplete activities*/
+
+% Garbage, ordering, Solar system, family
 
 \section{Timeline}
 \label{S:1}
@@ -211,55 +245,36 @@ The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining 
 \section{About Me}
 \label{S:1}
 
-\begin{enumerate}
-\item Numbered list item one
-\item Numbered list item two
-\end{enumerate}
+I am a third year undergraduate engineering student from West Bengal University of Technology, pursuing B.Tech in Computer Science and Engineering. I have been contributing to KDE for the past few months on the Qt version of GCompris.
 
-\subsection{Subsection One}
+My contributions on GCompris include:
 
-Quisque elit ipsum, porttitor et imperdiet in, facilisis ac diam. Nunc facilisis interdum felis eget tincidunt. In condimentum fermentum leo, non consequat leo imperdiet pharetra. Fusce ac massa ipsum, vel convallis diam. Quisque eget turpis felis. Curabitur posuere, risus eu placerat porttitor, magna metus mollis ipsum, eu volutpat nisl erat ac justo. Nullam semper, mi at iaculis viverra, nunc velit iaculis nunc, eu tempor ligula eros in nulla. Aenean dapibus eleifend convallis. Cras ut libero tellus. Integer mollis eros eget risus malesuada fringilla mattis leo facilisis. Etiam interdum turpis eget odio ultricies sed convallis magna accumsan. Morbi in leo a mauris sollicitudin molestie at non nisl.
+\begin{itemize}
 
-\begin{table}[h]
-\centering
-\begin{tabular}{l l l}
-\hline
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\hline
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\hline
-\end{tabular}
-\caption{Table caption}
-\end{table}
+\item Display the characters attempted by the user in the Hangman activity
 
-\subsection{Subsection Two}
+\href{https://github.com/gcompris/GCompris-qt/commit/8ab75acf49431c685021f3cd0e58cf31f3fa4568}{https://github.com/gcompris/GCompris-qt/commit/\\8ab75acf49431c685021f3cd0e58cf31f3fa4568}
 
-Donec eget ligula venenatis est posuere eleifend in sit amet diam. Vestibulum sollicitudin mauris ac augue blandit ultricies. Nulla facilisi. Etiam ut turpis nunc. Praesent leo orci, tincidunt vitae feugiat eu, feugiat a massa. Duis mauris ipsum, tempor vel condimentum nec, suscipit non mi. Fusce quis urna dictum felis posuere sagittis ac sit amet erat. In in ultrices lectus. Nulla vitae ipsum lectus, a gravida erat. Etiam quam nisl, blandit ut porta in, accumsan a nibh. Phasellus sodales euismod dolor sit amet elementum. Phasellus varius placerat erat, nec gravida libero pellentesque id. Fusce nisi ante, euismod nec cursus at, suscipit a enim. Nulla facilisi.
+\item Adding a Directory class in Core to directly get a list of all files in a given directory
 
-\begin{figure}[h]
-\centering\includegraphics[width=0.4\linewidth]{placeholder}
-\caption{Figure caption}
-\end{figure}
+\href{https://github.com/gcompris/GCompris-qt/commit/955462b943c34fc130d1a68fcfb0e1ec6393a3f0}{https://github.com/gcompris/GCompris-qt/commit/\\955462b943c34fc130d1a68fcfb0e1ec6393a3f0}
 
-Integer risus dui, condimentum et gravida vitae, adipiscing et enim. Aliquam erat volutpat. Pellentesque diam sapien, egestas eget gravida ut, tempor eu nulla. Vestibulum mollis pretium lacus eget venenatis. Fusce gravida nisl quis est molestie eu luctus ipsum pretium. Maecenas non eros lorem, vel adipiscing odio. Etiam dolor risus, mattis in pellentesque id, pellentesque eu nibh. Mauris nec ante at orci ultricies placerat ac non massa. Aenean imperdiet, ante eu sollicitudin vestibulum, dolor felis dapibus arcu, sit amet fermentum urna nibh sit amet mauris. Suspendisse adipiscing mollis dolor quis lobortis.
+\item Improve the algorithm to add new levels in the categorization activity, so that we do not need to change the code while adding new levels. Also, added odd-even category in the categorization activity
 
-\begin{equation}
-\label{eq:emc}
-e = mc^2
-\end{equation}
+\href{https://github.com/gcompris/GCompris-qt/commit/db7a4a9b743a3521c7c68f0b2b54719cbc9582db}{https://github.com/gcompris/GCompris-qt/commit/\\db7a4a9b743a3521c7c68f0b2b54719cbc9582db}
 
-\section{The Second Section}
-\label{S:2}
+\item Display a black point in drawletters and drawnumbers activity whenever a line cannot be drawn for a given input
 
-Reference to Section \ref{S:1}. Etiam congue sollicitudin diam non porttitor. Etiam turpis nulla, auctor a pretium non, luctus quis ipsum. Fusce pretium gravida libero non accumsan. Donec eget augue ut nulla placerat hendrerit ac ut mi. Phasellus euismod ornare mollis. Proin tempus fringilla ultricies. Donec pretium feugiat libero quis convallis. Nam interdum ante sed magna congue eu semper tellus sagittis. Curabitur eu augue elit.
+\href{https://github.com/gcompris/GCompris-qt/commit/eaf8dd326dd3f5581995155739be5c72af744f92}{https://github.com/gcompris/GCompris-qt/commit/\\eaf8dd326dd3f5581995155739be5c72af744f92}
 
-Aenean eleifend purus et massa consequat facilisis. Etiam volutpat placerat dignissim. Ut nec nibh nulla. Aliquam erat volutpat. Nam at massa velit, eu malesuada augue. Maecenas sit amet nunc mauris. Maecenas eu ligula quis turpis molestie elementum nec at est. Sed adipiscing neque ac sapien viverra sit amet vestibulum arcu rhoncus.
+\item \textbf{Ongoing activity}: Ordering activity, which aims at arranging numbers and alphabets in it's increasing or decreasing order
 
-Vivamus pharetra nibh in orci euismod congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque lacus diam, congue vel laoreet id, iaculis eu sapien. In id risus ac leo pellentesque pellentesque et in dui. Etiam tincidunt quam ut ante vestibulum ultricies. Nam at rutrum lectus. Aenean non justo tortor, nec mattis justo. Aliquam erat volutpat. Nullam ac viverra augue. In tempus venenatis nibh quis semper. Maecenas ac nisl eu ligula dictum lobortis. Sed lacus ante, tempor eu dictum eu, accumsan in velit. Integer accumsan convallis porttitor. Maecenas pretium tincidunt metus sit amet gravida. Maecenas pretium blandit felis, ac interdum ante semper sed.
+\href{https://github.com/gcompris/GCompris-qt/pull/172}{https://github.com/gcompris/GCompris-qt/pull/172}
 
-In auctor ultrices elit, vel feugiat ligula aliquam sed. Curabitur aliquam elit sed dui rhoncus consectetur. Cras elit ipsum, lobortis a tempor at, viverra vitae mi. Cras sed urna sed eros bibendum faucibus. Morbi vel leo orci, vel faucibus orci. Vivamus urna nisl, sodales vitae posuere in, tempus vel tellus. Donec magna est, luctus non commodo sit amet, placerat et enim.
+\end{itemize}
+
+
+\textbf{Blog}: \href{http://rudranilbasu.me/blog/}{rudranilbasu.me/blog}
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
