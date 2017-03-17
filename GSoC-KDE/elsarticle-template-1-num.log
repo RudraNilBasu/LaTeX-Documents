@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.14)  17 MAR 2017 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.14)  18 MAR 2017 02:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -245,6 +245,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip47
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count112
+\float@exts=\toks19
+\float@box=\box31
+\@float@everytoks=\toks20
+\@floatcapt=\box32
+)
 (./elsarticle-template-1-num.aux
 
 LaTeX Warning: Label `S:1' multiply defined.
@@ -261,33 +269,33 @@ LaTeX Warning: Label `S:1' multiply defined.
 )
 \openout1 = `elsarticle-template-1-num.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
+\scratchcounter=\count113
 \scratchdimen=\dimen119
-\scratchbox=\box31
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count115
+\scratchbox=\box33
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count116
 \MPscratchDim=\dimen120
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks20
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -303,8 +311,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 81.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring OFF on input line 82.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -312,73 +320,119 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count118
+\c@section@level=\count119
 )
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 
 (./elsarticle-template-1-num.out) (./elsarticle-template-1-num.out)
 \@outlinefile=\write4
 \openout4 = `elsarticle-template-1-num.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 121.
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 121.
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 157.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 158.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 157.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 158.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <submarine.png, id=52, 192
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <submarine.png, id=51, 192
 7.2pt x 1084.05pt>
 File: submarine.png Graphic file (type png)
 
 <use submarine.png>
-Package pdftex.def Info: submarine.png used on input line 203.
+Package pdftex.def Info: submarine.png used on input line 217.
 (pdftex.def)             Requested size: 390.0pt x 219.37006pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2] [3 <./submarine.png>] [4]
+[2] <family.png, id=57, 1927.2pt x 1084.05pt>
+File: family.png Graphic file (type png)
+ <use family.png>
+Package pdftex.def Info: family.png used on input line 237.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.240 
+       <./submarine.png>] <arrangement.png, id=66, 722.7pt x 394.47375pt>
+File: arrangement.png Graphic file (type png)
+
+<use arrangement.png>
+Package pdftex.def Info: arrangement.png used on input line 285.
+(pdftex.def)             Requested size: 390.0pt x 212.8742pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.288 
+       <./family.png>] [5pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.319 \item R
+             eview the layout and the instructions reviewed by the mentors b...
+ <./arrangement.png>]
+Overfull \hbox (0.82924pt too wide) in paragraph at lines 334--335
+[]\OT1/cmr/m/n/12 Get the lev-els re-viewed by my men-tors and make nec-es-sary
+ changes 
+ []
+
+[6] [7] [8]
+Overfull \hbox (4.06953pt too wide) in paragraph at lines 443--444
+[]\OT1/cmr/m/n/12 github.com/BytesClub/Battery-Manager[] ) and few video game p
+rojects which
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
+
+ []
+
 No file elsarticle-template-1-num.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
-[5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 495.
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 495.
  (./elsarticle-template-1-num.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 495.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 495.
 Package rerunfilecheck Info: File `elsarticle-template-1-num.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: C2C553831C60CA4D1F04145CD516EDDD;433.
+(rerunfilecheck)             Checksum: 3FA24D1F5596A7AA1F6B360A4FB17265;424.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 495.
  ) 
 Here is how much of TeX's memory you used:
- 6172 strings out of 493029
- 88629 string characters out of 6136233
- 173441 words of memory out of 5000000
- 9627 multiletter control sequences out of 15000+600000
- 10633 words of font info for 39 fonts, out of 8000000 for 9000
+ 6246 strings out of 493029
+ 89592 string characters out of 6136233
+ 175781 words of memory out of 5000000
+ 9689 multiletter control sequences out of 15000+600000
+ 10992 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,5n,30p,557b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,5n,30p,728b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
@@ -387,10 +441,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb>
-Output written on elsarticle-template-1-num.pdf (5 pages, 2167128 bytes).
+Output written on elsarticle-template-1-num.pdf (9 pages, 2453324 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 80 words of extra memory for PDF output out of 10000 (max. 10000000)
 

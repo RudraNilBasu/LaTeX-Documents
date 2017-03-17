@@ -53,6 +53,7 @@
 %% for the whole article with \linenumbers after \end{frontmatter}.
 \usepackage{lineno}
 \usepackage{hyperref}
+\usepackage{float}
 
 %% natbib.sty is loaded by default. However, natbib options can be
 %% provided with \biboptions{...} command. Following options are
@@ -131,7 +132,7 @@
 
 %GCompris is about teaching the basics in the most easiest way to children between the age of 2 to 10. The gtk+ version of GCompris was very well recieved, and from there it was decided to Qt version, to make GCompris available for all kinds of devices, like tablets. The latest version of GCompris is 0.70 and as of now it has 137 categories on various topics like science, maths, games and much more, fully supporting 15 languages.
 
-GCompris is a high quality educational suite which aims at making learning easier for children aged 2 to 10. GCompris currently has 137 activities on various topics such as science, maths, games with which it has succesfully created a great learning environment for children. I strongly believe in what GCompris stands for and in this project I aim at taking GCompris one step forward by finishing three started activities: \textit{Pilot a Submarine} , \textit{Garbage Recycle} and \textit{Object Arrangement}
+GCompris is a high quality educational suite which aims at making learning easier for children aged 2 to 10. GCompris currently has 137 activities on various topics such as science, maths, games with which it has succesfully created a great learning environment for children. I strongly believe in what GCompris stands for and in this project I aim at taking GCompris one step forward by finishing three started activities: \textit{Pilot a Submarine} , \textit{Family} and \textit{Object Arrangement}
 
 
 %As of \today , a brief statistics of GCompris are:
@@ -158,17 +159,28 @@ By the end of the Google Summer of Code's time period, I will be completing the 
 
 \href{https://cgit.kde.org/gcompris.git/log/?h=gsoc-submarine}{https://cgit.kde.org/gcompris.git/log/?h=gsoc-submarine}
 
-\item \textbf{Garbage Recycle}: This activity is aimed to teach garbage classification. This was started in \href{https://cgit.kde.org/gcompris.git/log/?h=SoK_Activity_recyclebin_shivansh} {recyclebin} branch
+\item \textbf{Family}: It is an activity to help children understand how they are related to their relatives. It was started in the branch:
 
-Discussions:
+\href{https://cgit.kde.org/gcompris.git/log/?h=GSoC-family}{https://cgit.kde.org/gcompris.git/log/?h=GSoC-family}
 
-\href{https://phabricator.kde.org/T339}{https://phabricator.kde.org/T339}
+% =======================
+% Garbage Recycle
+% =======================
+%\item \textbf{Garbage Recycle}: This activity is aimed to teach garbage classification. This was started in \href{https://cgit.kde.org/gcompris.git/log/?h=SoK_Activity_recyclebin_shivansh} {recyclebin} branch
+
+%Discussions:
+
+%\href{https://phabricator.kde.org/T339}{https://phabricator.kde.org/T339}
+
+% =======================
+% Garbage Recycle
+% =======================
 
 %\item \textbf{The Solar System}: This activity aims at providing a basic understanding about our Solar System, it's planets and facts and properties of each of the planets.
 
 \item \textbf{Object Arrangement}: This activity is aimed at teaching arranging objects in a given order based on factors like height and width.
 
-The activities for arranging numbers and alphabets in either ascending or descending order is already in progress and this will be a generic one, adding all kinds of ordering activities to the project.
+The activities for arranging numbers and alphabets in either ascending or descending order is already in review and this will be a generic one, adding all kinds of ordering activities to the project.
 
 Discussions:
 
@@ -187,9 +199,11 @@ The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining 
 
 \item Since this activity was already present in the Gtk+ version, I will be using the svg and the audio files from the resources used in the Gtk+ submarines activity. This will allow me to dive into the coding part directly. 
 
+\item I will be using box2d for the simulation and handling physics and collisions
+
 \item There will be a tutorial at the start of the activity, which will give a brief description about the different elements (engine, rudders and air tanks) and it's functions.
 
-\item Firstly I will be implementing the submarine and the mechanics of it's elements, namely the engine, rudders and the air tanks. Once that is in place, I will then shift on to create various levels and it's variations.
+\item Firstly I will be implementing the submarine and the mechanics of it's elements, namely the engine, rudders and the air tanks. Once that is in place, I will start creating various levels and it's variations.
 
 %The Gtk+ version had only 4 levels, and I will increase the number of levels in the Qt port, increasing the difficulty curve, bringing up elements like caves, rocks, while still keeping it doable for children within the prescribed age limit.
 
@@ -205,29 +219,57 @@ The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining 
 \end{figure}
 
 \end{itemize}
-\subsection{Garbage Recycle}
 
-This activity will be done from scratch as the implementation in the given branch doesn't match with the description. I will be using images from \href{https://openclipart.org/}{openclipart.org} and it will have the following features:
+\subsection{Family}
+
+The core implementation of the family activity is finished. The layout of the activity needs to be improved.
 
 \begin{itemize}
 
-\item The activity will begin with a tutorial explaining the basics of different types of recycling procedure for different materials, along with the goal of the activity.
 
-\item Garbages of different types will be available in the table at the start of each level.
-
-\item The user will have to put the waste materials in it's correct recycling bin. On placing the waste in it's correct bin, it will be recycled properly. The goal of the activity is to correctly recycle each of the wastes as provided in each levels.
-
-\item Items will be placed on it's respective bin via drag and drop
-
-\item With progress of levels, there will be an increase in the categories of waste materials, in order to maintain a proper difficulty curve.
+\item The layout of the activity will be changed to a tree like representation
+\item It will have two modes: the normal mode and an expert mode
+\item The expert mode will be added to the activity, in which a relation will be provided and the child will have to click on the correct pair which demonstrates the given relation.
 
 \end{itemize}
+
+\begin{figure}[H]
+\centering\includegraphics[width=1.0\linewidth]{family}
+\caption{Current layout of the Family Activity}
+\end{figure}
+
+% =======================
+% Garbage Recycle
+% =======================
+%\subsection{Garbage Recycle}
+
+%This activity will be done from scratch as the implementation in the given branch doesn't match with the description. I will be using images from \href{https://openclipart.org/}{openclipart.org} and it will have the following features:
+
+%\begin{itemize}
+
+%\item The activity will begin with a tutorial explaining the basics of different types of recycling procedure for different materials, along with the goal of the activity.
+
+%\item Garbages of different types will be available in the table at the start of each level.
+
+%\item The user will have to put the waste materials in it's correct recycling bin. On placing the waste in it's correct bin, it will be recycled properly. The goal of the activity is to correctly recycle each of the wastes as provided in each levels.
+
+%\item Items will be placed on it's respective bin via drag and drop
+
+%\item With progress of levels, there will be an increase in the categories of waste materials, in order to maintain a proper difficulty curve.
+
+%\end{itemize}
+
+% =======================
+% Garbage Recycle
+% =======================
 
 \subsection{Object Arrangement}
 
 This activity will be created from scratch, in order to expand the current ordering activity to a more generic version of it. It will have the following features:
 
 \begin{itemize}
+
+\item I will be using \href{https://openclipart.org/}{openclipart.org} and Inkscape for the images
 
 \item Different types of objects will be provided at the start of each levels and the user will be asked to arrange them in a specific order (ascending or descending) based on a given parameter (height or weight)
 
@@ -238,6 +280,11 @@ This activity will be created from scratch, in order to expand the current order
 \item With the proper measurements, the user will then arrange the items in the correct order of the parameter
 
 \end{itemize}
+
+\begin{figure}[H]
+\centering\includegraphics[width=1.0\linewidth]{arrangement}
+\caption{Object Arrangement}
+\end{figure}
 
 %/*2d matrix, Tux, door and few pickups. command tux to take all pickups and move out of the door. Commands - rotate (+-90, +180), move forward (x blocks)*/
 
@@ -250,10 +297,120 @@ This activity will be created from scratch, in order to expand the current order
 \section{Timeline}
 \label{S:1}
 
+\textbf{May 5, 2017 - May 30, 2017: Community Bonding Period}
+
+\begin{itemize}
+\item I will interact and consult with my mentors.
+\item I will take an in-depth look at the implementation of the activities in my proposal, discusing about the same with my mentors, so as to device an optimum method to implement the proposed tasks.
+\item I will look for the necessary resources (images and audio clips) required for my proposed projects.
+\end{itemize}
+
+\textbf{May 31, 2017 - July 10, 2017: \textit{Pilot a Submarine}}
+
+\begin{itemize}
+
+\item \textbf{May 31 - June 5: \textit{Basic Structure, Instructions}}
+
+\begin{itemize}
+\item Implement the basic structure of the activity, which includes the submarine itself, the surrounding environment, the gates, the colliders such as the rocks and ships. Also, include the basic components of the submarine: the engine, rudders and air tanks.
+
+\item Create instructions for the activity: explaining the use of the components of the submarine (engine, rudders and the air tanks) and the goal of the activity.
+
+\item Review the layout and the instructions reviewed by the mentors before proceeding and make necessary changes
+\end{itemize}
+
+\item \textbf{June 6 - June 20: \textit{Movement, Physics, Collisions and animations}}
+
+\begin{itemize}
+\item Implement basic movement of the submarine, physics and collision handling of the submarine using box2d
+\item Detect pickups, game over and succesful level completion
+\item Implement animations of submarine
+\item Get the implementation reviewed by my mentors and make necessary changes
+\end{itemize}
+
+\item \textbf{June 21 - June 30: \textit{Implement levels with difficulty}}
+\begin{itemize}
+\item Implement different levels while maintaining a difficulty curve
+\item Get the levels reviewed by my mentors and make necessary changes
+\end{itemize}
+
+\item \textbf{July 1 - July 10: \textit{Testing and bug fixing}}
+\begin{itemize}
+\item Test the activity on various platforms and screen sizes
+\item Get reviews for the overall activity from my mentors
+\item Make necessary changes based on the reviews from my mentors
+\end{itemize}
+
+\end{itemize}
+
+\textbf{July 11, 2017 - July 25, 2017: \textit{Family}}
+\begin{itemize}
+
+\item \textbf{July 11 - July 18: \textit{Improve layouts}}
+\begin{itemize}
+\item Change the layout of the activity to make sure that the implementation is clean and doesn't override other components of the activity
+\item Get reviews from my mentor and make necessary changes
+\end{itemize}
+
+\item \textbf{July 19 - July 25: \textit{Improve layouts}}
+\begin{itemize}
+\item Implement expert mode: given a relation, the user will have to click on a pair which satisfies the given relation
+\item Review the expert mode from my mentors and make necessary changes
+\end{itemize}
+
+\end{itemize}
+
+\textbf{July 26, 2017 - August 21, 2017: \textit{Object Arrangement}}
+
+\begin{itemize}
+
+\item \textbf{July 26 - July 31: \textit{Basic Structure, Instructions}}
+
+\begin{itemize}
+\item Create the basic layout of the activity: The objects will be displayed for each levels, the tools to measure the height (a ruler) and weight (a weighing scales)
+\item Display the instructions at the beginning of the activity
+\item Review the layout and the instructions from my mentor and make necessary changes
+\end{itemize}
+
+\item \textbf{August 1 - August 15: \textit{Measure properties of item, arranging objects}}
+
+\begin{itemize}
+\item Implement measuring of the object's property (height and weight) using the necessary tools
+\item Implement Dragging and dropping the given item's on the table after the measurements are taken
+\item Checking the order of the resultant arrangement after the \textit{"ok"} button is clicked, and display the result to the user.
+\item Get the working of the activity reviewed by my mentors and make necessary changes
+\end{itemize}
+
+\item \textbf{August 16 - August 21: \textit{Testing}}
+
+\begin{itemize}
+\item Testing the activity on various platforms and screen sizes
+\item Get more reviews from my mentors on the overall activity
+\item Make necessary changes based on the reviews
+\end{itemize}
+
+\end{itemize}
+
+\textbf{August 22, 2017 - August 29, 2017: \textit{Final Week}}
+
+\begin{itemize}
+\item Rigorous testing of the activities on various platforms
+\item Fixing the reported bugs
+\item Submit the code for final evaluation
+\end{itemize}
+
+\textbf{Other commitments}
+
+\begin{itemize}
+\item I will be having exams from June 1st to June 15th. During that timeline, I will be able to work ~3 hours per day
+\item I might be out of station from July 10th to 16th. I will be able to work in my free time, giving around 6 hours per day
+\item During the rest of the period, I will be able to work 8-10 hours per day
+\end{itemize}
+
 \section{About Me}
 \label{S:1}
 
-I am a third year undergraduate engineering student from West Bengal University of Technology, pursuing B.Tech in Computer Science and Engineering. I have been contributing to KDE for the past few months on the Qt version of GCompris.
+I am a third year undergraduate engineering student from West Bengal University of Technology, pursuing B.Tech in Computer Science and Engineering. I have been contributing to KDE for the past few months on the Qt version of GCompris, which helped me to get familiar with Qt and the overall GCompris codebase.
 
 My contributions on GCompris include:
 
@@ -275,15 +432,28 @@ My contributions on GCompris include:
 
 \href{https://github.com/gcompris/GCompris-qt/commit/eaf8dd326dd3f5581995155739be5c72af744f92}{https://github.com/gcompris/GCompris-qt/commit/\\eaf8dd326dd3f5581995155739be5c72af744f92}
 
-\item \textbf{Ongoing activity}: Ordering activity, which aims at arranging numbers and alphabets in it's increasing or decreasing order
+\item \textbf{Under review}: Ordering activity, which aims at arranging numbers and alphabets in it's increasing or decreasing order
 
 \href{https://github.com/gcompris/GCompris-qt/pull/172}{https://github.com/gcompris/GCompris-qt/pull/172}
 
 \end{itemize}
 
-Besides this, I am the head of our college's programming club, where we create awareness about open source and encourage newcomers to take part in open source contribution.
+I am also the head of our college's programming club, where we create awareness about open source and encourage newcomers to take part in open source contribution.
 
-\textbf{Blog}: \href{http://rudranilbasu.me/blog/}{rudranilbasu.me/blog}
+Some of my other open source projects include contributing to Algorithm Visualizer (\href{https://github.com/parkjs814/AlgorithmVisualizer}{github.com/parkjs814/AlgorithmVisualizer}), Battery Manager ( \href{https://github.com/BytesClub/Battery_Manager}{github.com/BytesClub/Battery-Manager} ) and few video game projects which I build during my free time, namely: Followed (\href{https://github.com/RudraNilBasu/AsylumJam2016}{github.com/RudraNilBasu/\\AsylumJam2016}), Fortior (\href{https://github.com/RudraNilBasu/Fortior}{github.com/RudraNilBasu/Fortior}) and a Quiz game (\href{https://github.com/RudraNilBasu/Quiz-Game}{github.com/RudraNilBasu/Quiz-Game}) to name a few.
+
+All of my open source projects can be found on my Github profile: \href{https://github.com/RudraNilBasu}{github.com/RudraNilBasu}
+
+
+Besides this, I have actively taken part in online and offline programming competitions, hackathons and have been involved in video game development, taking part in numerous online and offline game jams.
+
+\textbf{Blog}: \href{http://rudranilbasu.me/blog/}{rudranilbasu.me/blog}\\
+
+\textbf{Contact Information}:
+
+\textbf{Email ID}: rudra.nil.basu.1996@gmail.com
+
+\textbf{Freenode IRC nick}: rudra
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
