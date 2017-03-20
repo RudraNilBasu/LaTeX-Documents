@@ -132,7 +132,7 @@
 
 %GCompris is about teaching the basics in the most easiest way to children between the age of 2 to 10. The gtk+ version of GCompris was very well recieved, and from there it was decided to Qt version, to make GCompris available for all kinds of devices, like tablets. The latest version of GCompris is 0.70 and as of now it has 137 categories on various topics like science, maths, games and much more, fully supporting 15 languages.
 
-GCompris is a high-quality educational suite which aims at making learning easier for children aged 2 to 10. GCompris currently has 137 activities on various topics such as science, maths, games with which it has successfully created a great learning environment for children. I strongly believe in what GCompris stands for and in this project, I aim at taking GCompris one step forward by finishing three started activities: \textit{Pilot a Submarine}, \textit{Family} and \textit{Object Arrangement}
+GCompris is a high-quality educational suite which aims at making learning easier for children aged 2 to 10. GCompris currently has 137 activities on various topics such as science, maths, games with which it has successfully created a great learning environment for children. I strongly believe in what GCompris stands for and in this project, I aim at taking GCompris one step forward by finishing three started activities: \textit{Pilot a Submarine}, \textit{Family} and \textit{Digital Electronics}
 
 
 %As of \today , a brief statistics of GCompris are:
@@ -163,6 +163,12 @@ By the end of the Google Summer of Code's time period, I will be completing the 
 
 \href{https://cgit.kde.org/gcompris.git/log/?h=GSoC-family}{https://cgit.kde.org/gcompris.git/log/?h=GSoC-family}
 
+\item \textbf{Digital Electronics}: This activity is aimed at providing a real time simulation of an electric circuit. It was started in the branch:
+
+\href{https://cgit.kde.org/gcompris.git/log/?h=gsoc_pulkit_digital_electricity}{https://cgit.kde.org/gcompris.git/log/?h=gsoc-pulkit-digital-electricity}
+
+\end{itemize}
+
 % =======================
 % Garbage Recycle
 % =======================
@@ -177,6 +183,12 @@ By the end of the Google Summer of Code's time period, I will be completing the 
 % =======================
 
 %\item \textbf{The Solar System}: This activity aims at providing a basic understanding about our Solar System, it's planets and facts and properties of each of the planets.
+
+\textbf{Additional Task}:
+
+If time permits me, I will be working on one more activity which has not been started yet, but discussions were ongoing for the implementation of the activity:
+
+\begin{itemize}
 
 \item \textbf{Object Arrangement}: This activity is aimed at teaching arranging objects in a given order based on factors like height and width.
 
@@ -207,13 +219,19 @@ The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining 
 
 %The Gtk+ version had only 4 levels, and I will increase the number of levels in the Qt port, increasing the difficulty curve, bringing up elements like caves, rocks, while still keeping it doable for children within the prescribed age limit.
 
+\item The aim is to make the activity easy for students to understand. For achieving this, the levels should start from the very basics. The implementation is divided into two parts: 
+
+\begin{itemize}
+\item the initial levels, which are aimed at giving a basic understanding on the use of different elements required to control a submarine. For example, the first level will explain the use of engines of a submarine and will ask the user to move from one point to the other by using the engine only. Similarly, the next levels will focus on using the ballast tanks, rudders and other elements of a submarine
+\item the latter levels will use the concepts from the initial levels in various forms to check whether the child has fully understood the mechanism of controlling the submarine or not
+\end{itemize}
 \item The activity will contain pickups in the form of jewels, as it was present in the Gtk+ version
 
 \item Besides the regular pickups in the Gtk+ version, there will be additional threats in the form of rocks and caves, in order to maintain an increasing difficulty curve, while still keeping it doable for children within the prescribed age limit.
 
 \item In order to enhance the experience, the overall activity and the movement of the submarine and the animations will be smoother compared to the Gtk+ activity.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering\includegraphics[width=1.0\linewidth]{submarine}
 \caption{Submarine Activity}
 \end{figure}
@@ -236,6 +254,11 @@ The core implementation of the family activity is finished. The layout of the ac
 \begin{figure}[H]
 \centering\includegraphics[width=1.0\linewidth]{family}
 \caption{Current layout of the Family Activity}
+\end{figure}
+
+\begin{figure}[H]
+\centering\includegraphics[width=1.0\linewidth]{family_2}
+\caption{Final layout of the Family Activity}
 \end{figure}
 
 % =======================
@@ -263,7 +286,28 @@ The core implementation of the family activity is finished. The layout of the ac
 % Garbage Recycle
 % =======================
 
-\subsection{Object Arrangement}
+\subsection{Digital Electricity}
+
+The core simulation of electricity is done and the circuits are working properly. But to make sure it is easier for the children to understand, we have to illustrate how each of the components work in a circuit. For this project, I propose:
+
+\begin{itemize}
+\item Whenever there is a level where a specific item is used for the first time, there will be an instruction text to inform the children on what the specific component does and how to operate it
+\item There will be levels to teach the children on how to use the components. These levels are broadly divided into three parts:
+\begin{itemize}
+\item The first part will be a very basic one: the aim will just be to learn how to use the component. For example, if the component is the \textit{Or Gate}, the child will be asked to light the bulb once using the "1" and "0" input, or with two "1" inputs.
+\item The second part will take the previous concepts a bit further and will ask the child to solve a simple problem using the component, maybe reusing it more than once. For example, for the \textit{Or Gate}, the child will be asked to light the bulb from three power sources, such that the bulb should be on if at least one of the power sources is turned on
+\item The third part will make use of the component and one or more previously learned components and will ask the child to solve a given problem with a limited number of components
+\end{itemize}
+\item There will be an open arena, as it is present in the current progress of the activity, where the child can try out any combination of circuits and test it
+\item Since the basic simulation is already done in the current progress of the activity, I can directly move on to the coding part, implementing the different levels for the activity
+\end{itemize}
+
+\begin{figure}[H]
+\centering\includegraphics[width=1.0\linewidth]{digital_electricity}
+\caption{Digital Electricity: Instructions}
+\end{figure}
+
+\subsection{ [Additional Task]Object Arrangement}
 
 This activity will be created from scratch, in order to expand the current ordering activity to a more generic version of it. It will have the following features:
 
@@ -361,24 +405,24 @@ This activity will be created from scratch, in order to expand the current order
 
 \end{itemize}
 
-\textbf{July 26, 2017 - August 21, 2017: \textit{Object Arrangement}}
+\textbf{July 26, 2017 - August 21, 2017: \textit{Digital Electricity}}
 
 \begin{itemize}
 
-\item \textbf{July 26 - July 31: \textit{Basic Structure, Instructions}}
+\item \textbf{July 26 - July 31: \textit{Initial levels, Instructions}}
 
 \begin{itemize}
-\item Create the basic layout of the activity: The objects will be displayed for each levels, the tools to measure the height (a ruler) and weight (a weighing scales)
-\item Display the instructions at the beginning of the activity
+\item Create the initial levels which are aimed at teaching the basic workings of the components
+\item Display the instructions at the beginning of the levels where a new component is used for the first time
 \item Review the layout and the instructions from my mentor and make necessary changes
 \end{itemize}
 
-\item \textbf{August 1 - August 15: \textit{Measure properties of item, arranging objects}}
+\item \textbf{August 1 - August 15: \textit{Implement levels with difficulty}}
 
 \begin{itemize}
-\item Implement measuring of the object's property (height and weight) using the necessary tools
-\item Implement Dragging and dropping the given item's on the table after the measurements are taken
-\item Checking the order of the resultant arrangement after the \textit{"ok"} button is clicked, and display the result to the user.
+\item Provide a specific problem to the user and ask them to solve it using only specific number of components
+\item Implement restricting the number of components that can be used per level to that specified in the level
+\item Checking the resultant circuit arrangement after the \textit{"ok"} button is clicked, and display the result to the user.
 \item Get the working of the activity reviewed by my mentors and make necessary changes
 \end{itemize}
 
