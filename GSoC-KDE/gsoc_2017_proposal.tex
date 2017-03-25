@@ -104,7 +104,7 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
-\title{Finishing activities for GCompris in Qt-Quick}
+\title{Finishing started activities for GCompris in Qt-Quick}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{<author name>}
@@ -132,7 +132,7 @@
 
 %GCompris is about teaching the basics in the most easiest way to children between the age of 2 to 10. The gtk+ version of GCompris was very well recieved, and from there it was decided to Qt version, to make GCompris available for all kinds of devices, like tablets. The latest version of GCompris is 0.70 and as of now it has 137 categories on various topics like science, maths, games and much more, fully supporting 15 languages.
 
-GCompris is a high-quality educational suite which aims at making learning easier for children aged 2 to 10. GCompris currently has 137 activities on various topics such as science, maths, games with which it has successfully created a great learning environment for children. However, there are few activities which were started previously but is still not yet complete. I strongly believe in what GCompris stands for and in this project, I aim at taking GCompris one step forward by finishing three started activities: \textit{Pilot a Submarine}, \textit{Family} and \textit{Digital Electronics}
+GCompris is a high-quality educational suite which aims at making learning easier for children aged 2 to 10. GCompris currently has 137 activities on various topics such as science, maths, games with which it has successfully created a great learning environment for children. However, there are few activities which were started previously but is not yet complete. I strongly believe in what GCompris stands for and in this project, I aim at taking GCompris one step forward by finishing three started activities: \textit{Pilot a Submarine}, \textit{Family} and \textit{Digital Electronics}
 
 
 %As of \today , a brief statistics of GCompris are:
@@ -159,13 +159,19 @@ By the end of the Google Summer of Code's time period, I will be completing the 
 
 \href{https://cgit.kde.org/gcompris.git/log/?h=gsoc-submarine}{https://cgit.kde.org/gcompris.git/log/?h=gsoc-submarine}
 
+The activity needs to be started from scratch, since not much advancement has been made in the branch
+
 \item \textbf{Family}: It is an activity to help children understand how they are related to their relatives. It was started in the branch:
 
 \href{https://cgit.kde.org/gcompris.git/log/?h=GSoC-family}{https://cgit.kde.org/gcompris.git/log/?h=GSoC-family}
 
+The core implementation of this activity is complete, but improvements needs to be done on the design
+
 \item \textbf{Digital Electronics}: This activity is aimed at providing a real time simulation of an electric circuit. It was started in the branch:
 
 \href{https://cgit.kde.org/gcompris.git/log/?h=gsoc_pulkit_digital_electricity}{https://cgit.kde.org/gcompris.git/log/?h=gsoc-pulkit-digital-electricity}
+
+A “Free Mode” already exists, levels and tutorials needs to be added to allow children to understand and use the components properly
 
 \end{itemize}
 
@@ -204,10 +210,11 @@ Discussions:
 
 \subsection{Pilot a Submarine}
 
-The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining the usage of elements such as engine, rudders and air tanks, in order to navigate a submarine to a required depth.
+The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining the usage of elements such as engine, rudders and air tanks, in order to navigate a submarine to a required depth. It was originally started in the \href{https://cgit.kde.org/gcompris.git/log/?h=gsoc-submarine}{gsoc-submarine} branch, but not much advancement has been made. So it needs to be started from scratch.
+
+\textbf{Main Goals:}
 
 \begin{itemize}
-
 
 \item Since this activity was already present in the Gtk+ version, I will be using the svg and the audio files from the resources used in the Gtk+ submarines activity. This will allow me to dive into the coding part directly. 
 
@@ -235,6 +242,14 @@ The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining 
 \centering\includegraphics[width=1.0\linewidth]{submarine}
 \caption{Submarine Activity}
 \end{figure}
+
+\end{itemize}
+
+\textbf{Extended Goals:}
+
+\begin{itemize}
+
+\item I will look forward to improve the controls of the submarine, to make it more intuitive for the children
 
 \end{itemize}
 
