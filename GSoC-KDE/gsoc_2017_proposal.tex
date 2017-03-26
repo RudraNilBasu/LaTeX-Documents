@@ -190,20 +190,20 @@ A “Free Mode” already exists, levels and tutorials needs to be added to allo
 
 %\item \textbf{The Solar System}: This activity aims at providing a basic understanding about our Solar System, it's planets and facts and properties of each of the planets.
 
-\textbf{Additional Task}:
+%\textbf{Additional Task}:
 
-If time permits me, I will be working on one more activity which has not been started yet, but discussions were ongoing for the implementation of the activity:
+%If time permits me, I will be working on one more activity which has not been started yet, but discussions were ongoing for the implementation of the activity:
 
-\begin{itemize}
+%\begin{itemize}
 
-\item \textbf{Object Arrangement}: This activity is aimed at teaching arranging objects in a given order based on factors like height and width.
+%\item \textbf{Object Arrangement}: This activity is aimed at teaching arranging objects in a given order based on factors like height and width.
 
-The activities for arranging numbers and alphabets in either ascending or descending order is already in review and this will be a generic one, adding all kinds of ordering activities to the project.
+%The activities for arranging numbers and alphabets in either ascending or descending order is already in review and this will be a generic one, adding all kinds of ordering activities to the project.
 
-Discussions:
+%Discussions:
 
-\href{https://phabricator.kde.org/T1956}{https://phabricator.kde.org/T1956}
-\end{itemize}
+%\href{https://phabricator.kde.org/T1956}{https://phabricator.kde.org/T1956}
+%\end{itemize}
 
 \section{Implementation Details}
 \label{S:1}
@@ -257,14 +257,18 @@ The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining 
 
 The core implementation of the family activity is finished. The layout of the activity needs to be improved.
 
+\textbf{Main Goals:}
+
 \begin{itemize}
-
-
 \item The layout of the activity will be improved, keeping same generation members in the same level in the tree representation, making the relation easy to understand
+\item Cleaning up the code: including but not limited to removing redundant variables, separating the main working code and the dataset, keeping them in different files
+\end{itemize}
+
+\textbf{Extended Goals:}
+
+\begin{itemize}
 \item It will have one extra sub-activity besides the existing activity
 \item In the sub-activity, a relation will be provided and the child will have to click on the correct pair which demonstrates the given relation.
-\item Cleaning up the code: including but not limited to removing redundant variables, separating the main working code and the dataset, keeping them in different files
-
 \end{itemize}
 
 \begin{figure}[H]
@@ -324,28 +328,28 @@ The core simulation of electricity is done and the circuits are working properly
 \caption{Digital Electricity: Instructions}
 \end{figure}
 
-\subsection{ \textbf{Additional Task}: Object Arrangement}
+%\subsection{ \textbf{Additional Task}: Object Arrangement}
 
-This activity will be created from scratch, in order to expand the current ordering activity to a more generic version of it. It will have the following features:
+%This activity will be created from scratch, in order to expand the current ordering activity to a more generic version of it. It will have the following features:
 
-\begin{itemize}
+%\begin{itemize}
 
-\item I will be using \href{https://openclipart.org/}{openclipart.org} and Inkscape for the images
+%\item I will be using \href{https://openclipart.org/}{openclipart.org} and Inkscape for the images
 
-\item Different types of objects will be provided at the start of each levels and the user will be asked to arrange them in a specific order (ascending or descending) based on a given parameter (height or weight)
+%\item Different types of objects will be provided at the start of each levels and the user will be asked to arrange them in a specific order (ascending or descending) based on a given parameter (height or weight)
 
-\item A toolbox will be provided to the user with the help of which the user can measure the required property of an item
+%\item A toolbox will be provided to the user with the help of which the user can measure the required property of an item
 
-\item The measured properties will be marked on the object. If a property of an object is not yet measured, it will be marked as unknown.
+%\item The measured properties will be marked on the object. If a property of an object is not yet measured, it will be marked as unknown.
 
-\item With the proper measurements, the user will then arrange the items in the correct order of the parameter
+%\item With the proper measurements, the user will then arrange the items in the correct order of the parameter
 
-\end{itemize}
+%\end{itemize}
 
-\begin{figure}[H]
-\centering\includegraphics[width=1.0\linewidth]{arrangement}
-\caption{Object Arrangement}
-\end{figure}
+%\begin{figure}[H]
+%\centering\includegraphics[width=1.0\linewidth]{arrangement}
+%\caption{Object Arrangement}
+%\end{figure}
 
 %/*2d matrix, Tux, door and few pickups. command tux to take all pickups and move out of the door. Commands - rotate (+-90, +180), move forward (x blocks)*/
 
@@ -374,11 +378,15 @@ This activity will be created from scratch, in order to expand the current order
 \item \textbf{May 31 - June 5: \textit{Basic Structure, Instructions}}
 
 \begin{itemize}
-\item Implement the basic structure of the activity, which includes the submarine itself, the surrounding environment, the gates, the colliders such as the rocks and ships. Also, include the basic components of the submarine: the engine, rudders and air tanks.
+\item Implement the basic layout of the activity, which includes the submarine itself, the surrounding environment, the gates, the colliders such as the rocks and ships. Also, include the basic components of the submarine: the engine, rudders and air tanks.
 
-\item Create instructions for the activity: explaining the use of the components of the submarine (engine, rudders and the air tanks) and the goal of the activity.
+\item Create tutorials for the activity: explaining the use of the components of the submarine (engine, rudders and the air tanks) and the goal of the activity.
 
-\item Review the layout and the instructions reviewed by the mentors before proceeding and make necessary changes
+\end{itemize}
+
+\textbf{Milestone to be reviewed}
+\begin{itemize}
+\item Review the basic layout and the tutorials of the activity
 \end{itemize}
 
 \item \textbf{June 6 - June 20: \textit{Movement, Physics, Collisions and animations}}
@@ -387,13 +395,21 @@ This activity will be created from scratch, in order to expand the current order
 \item Implement basic movement of the submarine, physics and collision handling of the submarine using box2d
 \item Detect pickups, game over and succesful level completion
 \item Implement animations of submarine
-\item Get the implementation reviewed by my mentors and make necessary changes
+\end{itemize}
+
+\textbf{Milestone to be reviewed}
+\begin{itemize}
+\item The movement, controls, physics, collisions and animations. Changes will be made if necessary
 \end{itemize}
 
 \item \textbf{June 21 - June 30: \textit{Implement levels with difficulty}}
 \begin{itemize}
-\item Implement different levels while maintaining a difficulty curve
-\item Get the levels reviewed by my mentors and make necessary changes
+\item Implement different levels while maintaining a proper difficulty curve
+\end{itemize}
+
+\textbf{Milestone to be reviewed}
+\begin{itemize}
+\item Review the levels and their difficulty. Changes will be made if necessary to create a proper balance in the difficulty in the levels
 \end{itemize}
 
 \item \textbf{July 1 - July 10: \textit{Testing and bug fixing}}
@@ -411,36 +427,60 @@ This activity will be created from scratch, in order to expand the current order
 \item \textbf{July 11 - July 18: \textit{Improve layouts}}
 \begin{itemize}
 \item Change the layout of the activity to make sure that the implementation is clean and doesn't override other components of the activity
-\item Get reviews from my mentor and make necessary changes
+\end{itemize}
+
+\textbf{Milestone to be reviewed}
+\begin{itemize}
+\item Review the layout of the activity and make changes if necessary
 \end{itemize}
 
 \item \textbf{July 19 - July 25: \textit{Implement sub-levels}}
 \begin{itemize}
 \item Implement sub-levels: given a relation, the user will have to click on a pair which satisfies the given relation
+\end{itemize}
+
+\textbf{Milestone to be reviewed}
+\begin{itemize}
 \item Review the new sub-levels from my mentors and make necessary changes
 \end{itemize}
 
+\item \textbf{July 26 - July 31: \textit{Testing}}
+\begin{itemize}
+\item Test the activity on various platforms and screen sizes
+\item Get reviews for the overall activity from my mentor
+\item Make the necessary changes based on the reviews from my mentors
 \end{itemize}
 
-\textbf{July 26, 2017 - August 21, 2017: \textit{Digital Electricity}}
+\end{itemize}
+
+\textbf{August 1, 2017 - August 21, 2017: \textit{Digital Electricity}}
 
 \begin{itemize}
 
-\item \textbf{July 26 - July 31: \textit{Initial levels, Instructions}}
+\item \textbf{August 1 - August 5: \textit{Initial levels, Instructions}}
 
 \begin{itemize}
 \item Create the initial levels which are aimed at teaching the basic workings of the components
 \item Display the instructions at the beginning of the levels where a new component is used for the first time
-\item Review the layout and the instructions from my mentor and make necessary changes
 \end{itemize}
 
-\item \textbf{August 1 - August 15: \textit{Implement levels with difficulty}}
+\textbf{Milestone to be reviewed}
+\begin{itemize}
+\item Review the initial levels, tutorials and instructions and make the necessary changes to make the concepts easier to understand for newcomers
+\end{itemize}
+
+\item \textbf{August 6 - August 15: \textit{Implement levels with difficulty}}
 
 \begin{itemize}
 \item Provide a specific problem to the user and ask them to solve it using only specific number of components
 \item Implement restricting the number of components that can be used per level to that specified in the level
 \item Checking the resultant circuit arrangement after the \textit{"ok"} button is clicked, and display the result to the user.
-\item Get the working of the activity reviewed by my mentors and make necessary changes
+\item Move the existing “free mode” in the end as the last level, when all the previous level are completed by the user
+\end{itemize}
+
+\textbf{Milestone to be reviewed}
+\begin{itemize}
+\item Review the levels and it’s difficulty and make changes if necessary to adjust the difficulty of the levels
 \end{itemize}
 
 \item \textbf{August 16 - August 21: \textit{Testing}}
@@ -497,6 +537,14 @@ My contributions on GCompris include:
 \item \textbf{Under review}: Ordering activity, which aims at arranging numbers and alphabets in it's increasing or decreasing order
 
 \href{https://github.com/gcompris/GCompris-qt/pull/172}{https://github.com/gcompris/GCompris-qt/pull/172}
+
+\item \textbf{Under review}: Allow only certain activities to take part in the expert mode of categorization activity
+
+\href{https://github.com/gcompris/GCompris-qt/pull/181}{https://github.com/gcompris/GCompris-qt/pull/181}
+
+\item Added images to the word dataset of gcompris, which is used in the odd-even category of the categorization activity
+
+\href{https://github.com/gcompris/GCompris-words/tree/master/words/numbers}{github.com/gcompris/GCompris-words/tree/master/words/numbers}
 
 \end{itemize}
 
