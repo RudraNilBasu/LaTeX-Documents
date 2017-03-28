@@ -239,7 +239,7 @@ The  \textit{"Pilot a Submarine"} is to learn how a submarine works, explaining 
 \item In order to enhance the experience, the overall activity and the movement of the submarine and the animations will be smoother compared to the Gtk+ activity.
 
 \begin{figure}[H]
-\centering\includegraphics[width=1.0\linewidth]{submarine}
+\centering\includegraphics[width=0.9\linewidth]{submarine}
 \caption{Submarine Activity}
 \end{figure}
 
@@ -264,13 +264,6 @@ The core implementation of the family activity is finished. The layout of the ac
 \item Cleaning up the code: including but not limited to removing redundant variables, separating the main working code and the dataset, keeping them in different files
 \end{itemize}
 
-\textbf{Extended Goals:}
-
-\begin{itemize}
-\item In the existing activity, for a given pair, the user will have to choose the correct relation. There will be one more activity besides the existing activity
-\item In the new activity, which will inherit the existing activity, a relation will be provided and the child will have to click on the correct pair which demonstrates the given relation
-\end{itemize}
-
 \begin{figure}[H]
 \centering\includegraphics[width=1.0\linewidth]{family}
 \caption{Current layout of the Family Activity}
@@ -280,6 +273,15 @@ The core implementation of the family activity is finished. The layout of the ac
 \centering\includegraphics[width=1.0\linewidth]{family_test_2}
 \caption{Sketch of the Final layout of the Family Activity}
 \end{figure}
+
+\textbf{Extended Goals:}
+
+\begin{itemize}
+\item In the existing activity, for a given pair, the user will have to choose the correct relation. There will be one more activity besides the existing activity
+\item In the new activity, which will inherit the existing activity, a relation will be provided and the child will have to click on the correct pair which demonstrates the given relation
+\end{itemize}
+
+
 
 % =======================
 % Garbage Recycle
@@ -325,14 +327,14 @@ The core simulation of electricity is done and the circuits are working properly
 \end{figure}
 \item The third part will ask the child to complete a given incomplete circuit, making use of the component and the previously learned components. It will ask the child to complete the circuit with limited number of the provided components
 \begin{figure}[H]
-\centering\includegraphics[width=1.0\linewidth]{digital_level_4}
+\centering\includegraphics[width=0.9\linewidth]{digital_level_4}
 \caption{Digital Electricity: Third Step}
 \end{figure}
 \end{itemize}
 \item The final answers for each of the above levels will be validated using an "ok" button
 \item Whenever there is a level where a specific item is used for the first time, there will be an instruction text to inform the children on what the specific component does and how to operate it
 \begin{figure}[H]
-\centering\includegraphics[width=1.0\linewidth]{digital_electricity}
+\centering\includegraphics[width=0.9\linewidth]{digital_electricity}
 \caption{Digital Electricity: Instructions}
 \end{figure}
 \item There will be a free mode, as it is present in the current implementation of the activity, where the child can try out any combination of circuits and test it. This “free mode” will be present after the levels are over, once the child has understood the concepts of each and every components and how to use it
@@ -460,6 +462,7 @@ The core simulation of electricity is done and the circuits are working properly
 \item \textbf{July 26 - July 31: \textit{Testing}}
 \begin{itemize}
 \item Test the activity on various platforms and screen sizes
+\item Rigorous testing of the overall activity for various corner cases which may break the workflow of the activity, analysing and fixing the bugs
 \item Get reviews for the overall activity from my mentor
 \item Make the necessary changes based on the reviews from my mentors
 \end{itemize}
@@ -473,7 +476,8 @@ The core simulation of electricity is done and the circuits are working properly
 \item \textbf{August 1 - August 5: \textit{Initial levels, Instructions}}
 
 \begin{itemize}
-\item Create the initial levels which are aimed at teaching the basic workings of the components
+\item Fix tools icon being too small for devices with small screen size by implementing the expandable and collapsible ListView
+\item Create the initial tutorial levels which are aimed at teaching the basic workings of the components
 \item Display the instructions at the beginning of the levels where a new component is used for the first time
 \end{itemize}
 
@@ -482,7 +486,7 @@ The core simulation of electricity is done and the circuits are working properly
 \item Review the initial levels, tutorials and instructions and make the necessary changes to make the concepts easier to understand for newcomers
 \end{itemize}
 
-\item \textbf{August 6 - August 15: \textit{Implement levels with difficulty}}
+\item \textbf{August 6 - August 17: \textit{Implement levels with difficulty}}
 
 \begin{itemize}
 \item Provide a specific problem to the user and ask them to solve it using only specific number of components
@@ -496,23 +500,35 @@ The core simulation of electricity is done and the circuits are working properly
 \item Review the levels and it’s difficulty and make changes if necessary to adjust the difficulty of the levels
 \end{itemize}
 
-\item \textbf{August 16 - August 21: \textit{Testing}}
+\item \textbf{August 18 - August 21: \textit{Testing}}
 
 \begin{itemize}
 \item Testing the activity on various platforms and screen sizes
-\item Get more reviews from my mentors on the overall activity
-\item Make necessary changes based on the reviews
+\item Rigorous testing of the overall activity for various corner cases which may break the workflow of the activity, analysing and fixing the bugs
 \end{itemize}
 
+\textbf{Milestone to be reviewed}
+\begin{itemize}
+\item Review of the overall activity, especially on various devices and screen sizes
 \end{itemize}
 
-\textbf{August 22, 2017 - August 29, 2017: \textit{Final Week}}
+\item \textbf{August 22 - August 29: \textit{Review}}
 
 \begin{itemize}
-\item Rigorous testing of the activities on various platforms
-\item Fixing the reported bugs
+\item Get reviews from my mentors on the overall activity
+\item Make necessary changes based on the reviews
 \item Submit the code for final evaluation
 \end{itemize}
+
+\end{itemize}
+
+%\textbf{August 22, 2017 - August 29, 2017: \textit{Final Week}}
+
+%\begin{itemize}
+%\item Rigorous testing of the activities on various platforms
+%\item Fixing the reported bugs
+%\item Submit the code for final evaluation
+%\end{itemize}
 
 \textbf{Other commitments}
 
